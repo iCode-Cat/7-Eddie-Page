@@ -1,0 +1,45 @@
+//Content Wrapper
+#wrapper {
+    margin: 0 auto;
+    max-width: 1332px;
+}
+
+body {
+    padding: 1.9rem 1rem 0 1rem;
+}
+// Flex Class
+.flex {
+    display: flex;
+
+    &-jc-btw {
+        justify-content: space-between;
+    }
+
+    &-jc-center {
+        justify-content: center;
+    }
+
+    &-direction-col {
+        flex-direction: column;
+    }
+
+    &-direction-row {
+        flex-direction: row;
+    }
+}
+
+// Logo Class
+.logo {
+    &-dark {
+        color: var(--clr-gray1);
+    }
+    &-light {
+        color: var(--clr-gray6);
+    }
+}
+
+@media (min-width:50em) {
+    body {
+        padding: 4.2rem 5rem 0 5rem;
+    }
+}

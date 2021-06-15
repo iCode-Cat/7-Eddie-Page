@@ -1,0 +1,99 @@
+:root {
+  --ff-logo:'Heebo', sans-serif;
+  --ff-footer:'Montserrat', sans-serif;
+  --clr-gray1:#333333;
+  --clr-gray2:#4F4F4F;
+  --clr-gray3:#828282;
+  --clr-gray4:#F2F2F2;
+  --clr-gray6:#BDBDBD;
+  --clr-blue:#2D9CDB;
+  --clr-green:#27AE60;
+  --clr-red:#EB5757;
+  --clr-white1:#FFFFFF;
+  --clr-white2:#F2F2F2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+}
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 1332px;
+}
+
+body {
+  padding: 1.9rem 1rem 0 1rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-btw {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-direction-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-direction-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.logo-dark {
+  color: var(--clr-gray1);
+}
+
+.logo-light {
+  color: var(--clr-gray6);
+}
+
+@media (min-width: 50em) {
+  body {
+    padding: 4.2rem 5rem 0 5rem;
+  }
+}
+
+.header-logo {
+  font-family: var(--ff-logo);
+}
+
+.header nav {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
