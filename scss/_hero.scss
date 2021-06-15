@@ -1,0 +1,43 @@
+// Variables
+$hero_header_text1:1.2rem;
+$hero_header_text2:2.4rem;
+
+.hero {
+    margin-top: 5rem;
+    &-header {
+        * {
+            font-weight: 500;
+        }
+        p {
+            color: var(--clr-blue);
+            font-size: var(--hero_header_text1);
+        }
+        h1 {
+            font-size: var(--hero_header_text2);
+            line-height: 3.6rem;
+            margin-top: 1rem;
+            white-space: nowrap;
+
+        }
+    }
+    &-image {
+        margin-top: 2rem;
+        img {
+            border-radius: 1.8rem;
+        }
+    }
+    &-header , &-footer {
+        margin-left: 3rem;
+    }
+    @media (min-width:50em) {
+        &-header , &-footer {
+            margin-left: 12rem;
+        }
+        &-header {
+            h1 {
+                line-height: 7.2rem;
+            }
+        }
+
+    }
+}

@@ -18,3 +18,8 @@ body {
 img {
     width: 100%;
 }
+
+li , span {
+    cursor: pointer;
+    list-style: none;
+}

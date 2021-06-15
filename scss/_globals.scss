@@ -19,6 +19,10 @@ body {
         justify-content: center;
     }
 
+    &-alg-center {
+        align-items: center;
+    }
+
     &-direction-col {
         flex-direction: column;
     }
@@ -30,11 +34,12 @@ body {
 
 // Logo Class
 .logo {
+    font-family: var(--ff-logo);
     &-dark {
         color: var(--clr-gray1);
     }
     &-light {
-        color: var(--clr-gray6);
+        color: var(--clr-white2);
     }
 }
 
