@@ -43,8 +43,104 @@ body {
     }
 }
 
+// Contact Input Class
+.contact-wrapper {
+
+    * {
+        font-weight: 500;
+    }
+    p {
+        color: var(--clr-gray3);
+        font-size: 1rem;
+    }
+    
+    .contact-input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+        width: 100%;
+        max-width: 350px;
+        background: var(--clr-white2);
+        height: 47px;
+        border-radius: 12px;
+        padding: 0.4rem;
+    }
+
+    input {
+ 
+        border-radius: 12px;
+        height: 100%;
+        width: 100%;
+        background: var(--clr-white2);
+        border: none;
+        outline: none;
+        padding-left: 1.9rem;
+    }
+}
+
+// Button Classes
+.btn {
+    cursor: pointer;
+    border: 0;
+    &-primary {
+        background: var(--clr-blue);
+        color: var(--clr-white1);
+    }
+    &-contact {
+        height: 100%;
+        width: 100%;
+        max-width: 71px;
+        border-radius: 12px;
+    }
+}
+
+// Left Margin Class
+.margin-left {
+    margin-left: 3rem;
+}
+
+// Icon Classes
+.icon {
+    color: #fff;
+    &-blue {
+        background: var(--clr-blue);
+    }
+    &-red {
+        background: var(--clr-red);
+    }
+    &-green {
+        background: var(--clr-green);
+    }
+}
+
 @media (min-width:50em) {
     body {
         padding: 4.2rem 5rem 0 5rem;
     }
+
+    // Contact Input Classes
+    .contact-wrapper { 
+       margin-top: 5rem; 
+       .contact-input {
+           height: 57px ;
+       }
+    }
+
+    // Button Classes
+.btn {
+    &-primary {
+        background: var(--clr-blue);
+        color: var(--clr-white1);
+    }
+    &-contact {
+        max-width: 94px;
+    }
+}
+
+// Left Margin Class
+.margin-left {
+    margin-left: 12rem;
+}
+
 }

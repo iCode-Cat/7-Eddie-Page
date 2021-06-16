@@ -13,12 +13,14 @@
   --clr-white2:#F2F2F2;
   --hero_header_text1:1.2rem;
   --hero_header_text2:2.4rem;
+  --offer_header_text1:2.4rem;
 }
 
 @media (min-width: 50em) {
   :root {
     --hero_header_text1:1.8rem;
     --hero_header_text2:4.8rem;
+    --offer_header_text1:3.6rem;
   }
 }
 
@@ -107,9 +109,100 @@ body {
   color: var(--clr-white2);
 }
 
+.contact-wrapper * {
+  font-weight: 500;
+}
+
+.contact-wrapper p {
+  color: var(--clr-gray3);
+  font-size: 1rem;
+}
+
+.contact-wrapper .contact-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0.5rem;
+  width: 100%;
+  max-width: 350px;
+  background: var(--clr-white2);
+  height: 47px;
+  border-radius: 12px;
+  padding: 0.4rem;
+}
+
+.contact-wrapper input {
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+  background: var(--clr-white2);
+  border: none;
+  outline: none;
+  padding-left: 1.9rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+}
+
+.btn-primary {
+  background: var(--clr-blue);
+  color: var(--clr-white1);
+}
+
+.btn-contact {
+  height: 100%;
+  width: 100%;
+  max-width: 71px;
+  border-radius: 12px;
+}
+
+.margin-left, .hero-header, .hero-footer, .offers .offers-header {
+  margin-left: 3rem;
+}
+
+.icon {
+  color: #fff;
+}
+
+.icon-blue {
+  background: var(--clr-blue);
+}
+
+.icon-red {
+  background: var(--clr-red);
+}
+
+.icon-green {
+  background: var(--clr-green);
+}
+
 @media (min-width: 50em) {
   body {
     padding: 4.2rem 5rem 0 5rem;
+  }
+  .contact-wrapper {
+    margin-top: 5rem;
+  }
+  .contact-wrapper .contact-input {
+    height: 57px;
+  }
+  .btn-primary {
+    background: var(--clr-blue);
+    color: var(--clr-white1);
+  }
+  .btn-contact {
+    max-width: 94px;
+  }
+  .margin-left, .hero-header, .hero-footer, .offers .offers-header {
+    margin-left: 12rem;
   }
 }
 
@@ -169,16 +262,110 @@ body {
   border-radius: 1.8rem;
 }
 
-.hero-header, .hero-footer {
-  margin-left: 3rem;
+.hero-footer {
+  margin-top: 2.2rem;
+}
+
+.hero-footer h1 {
+  color: var(--clr-gray1);
+  font-size: var(--hero_header_text2);
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.hero-footer p {
+  max-width: 275px;
+  margin-top: 3.3rem;
+  color: var(--clr-gray2);
+  font-weight: 400;
+  font-size: var(--hero_header_text1);
+  line-height: 18px;
 }
 
 @media (min-width: 50em) {
-  .hero-header, .hero-footer {
-    margin-left: 12rem;
-  }
   .hero-header h1 {
     line-height: 7.2rem;
   }
+  .hero-footer {
+    margin-top: 4.2rem;
+  }
+  .hero-footer h1 {
+    line-height: 72px;
+  }
+  .hero-footer p {
+    margin-top: 4.2rem;
+    line-height: 27px;
+    max-width: 380px;
+  }
+}
+
+.offers {
+  margin-top: 10.2rem;
+}
+
+.offers .offers-header {
+  margin-bottom: 9.2rem;
+}
+
+.offers .offers-header h1 {
+  font-weight: 500;
+  font-size: var(--offer_header_text1);
+  color: var(--clr-gray1);
+}
+
+.offers-cards {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.offers .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4.9rem 3rem;
+  max-width: 341px;
+}
+
+.offers .card span {
+  padding: 1.8rem;
+  border-radius: 16px;
+}
+
+.offers .card h1 {
+  margin: 3.5rem 0;
+  color: var(--clr-gray1);
+}
+
+.offers .card p {
+  max-width: 273px;
+  color: var(--clr-gray2);
+}
+
+.offers .card button {
+  background: red;
+}
+
+.offers .card:nth-child(2) {
+  margin: 11rem 0;
 }
 /*# sourceMappingURL=main.css.map */

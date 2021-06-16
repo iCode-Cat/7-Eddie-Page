@@ -1,7 +1,4 @@
 // Variables
-$hero_header_text1:1.2rem;
-$hero_header_text2:2.4rem;
-
 .hero {
     margin-top: 5rem;
     &-header {
@@ -27,15 +24,43 @@ $hero_header_text2:2.4rem;
         }
     }
     &-header , &-footer {
-        margin-left: 3rem;
+        @extend .margin-left
     }
-    @media (min-width:50em) {
-        &-header , &-footer {
-            margin-left: 12rem;
+
+    &-footer {
+        margin-top: 2.2rem;
+        h1 {
+            color: var(--clr-gray1);
+            font-size: var(--hero_header_text2);
+            font-weight: 500;
+            line-height: 36px;
         }
+        p {
+            max-width: 275px;
+            margin-top: 3.3rem;
+            color: var(--clr-gray2);
+            font-weight: 400;
+            font-size: var(--hero_header_text1);
+            line-height: 18px;
+        }
+    }
+
+    @media (min-width:50em) {
         &-header {
             h1 {
                 line-height: 7.2rem;
+            }
+        }
+
+        &-footer {
+            margin-top: 4.2rem;
+            h1 {
+                line-height: 72px;
+            }
+            p {
+                margin-top: 4.2rem;
+                line-height: 27px;
+                max-width: 380px;
             }
         }
 
