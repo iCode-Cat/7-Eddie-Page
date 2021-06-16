@@ -3,7 +3,6 @@
     margin-top: 10.2rem;
     
     .offers-header {
-        margin-bottom:  9.2rem;
         @extend .margin-left;
         h1 {
             font-weight: 500;
@@ -14,6 +13,7 @@
     }
 
     &-cards {
+        margin-top: 4.2rem;
         justify-content: space-between;
         display: flex;
         flex-direction: row;
@@ -27,6 +27,8 @@
        justify-content: center;
         padding: 4.9rem 3rem;
         max-width: 341px;
+        transition: 0.3s;
+        border-radius: 24px;
         // Icons
         span {
             padding: 1.8rem;
@@ -44,17 +46,33 @@
             color:var(--clr-gray2)
         }
 
-        button {
-            background: red;
+        .btn-secondary-hover {
+            background: #E0E0E0;
+            color: #828282;
+            margin-top: 3rem;
+            padding: 0.9rem 1.3rem;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .btn-secondary-hover:hover {
+            background: var(--clr-blue);
+            color: #fff;
         }
     }
     .card:nth-child(2) {
         margin: 11rem 0;
     }
 
+    // Hover Effects
+    .card:hover {
+        cursor: pointer;
+        box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.096);
+    }
+
     @media (min-width:50em) {
-        &-cards {
-            
+        .card:nth-child(2) {
+            margin: unset;
         }
         
     }

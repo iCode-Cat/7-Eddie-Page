@@ -303,10 +303,6 @@ body {
   margin-top: 10.2rem;
 }
 
-.offers .offers-header {
-  margin-bottom: 9.2rem;
-}
-
 .offers .offers-header h1 {
   font-weight: 500;
   font-size: var(--offer_header_text1);
@@ -314,6 +310,7 @@ body {
 }
 
 .offers-cards {
+  margin-top: 4.2rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -344,6 +341,9 @@ body {
           justify-content: center;
   padding: 4.9rem 3rem;
   max-width: 341px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 24px;
 }
 
 .offers .card span {
@@ -361,11 +361,34 @@ body {
   color: var(--clr-gray2);
 }
 
-.offers .card button {
-  background: red;
+.offers .card .btn-secondary-hover {
+  background: #E0E0E0;
+  color: #828282;
+  margin-top: 3rem;
+  padding: 0.9rem 1.3rem;
+  border-radius: 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.offers .card .btn-secondary-hover:hover {
+  background: var(--clr-blue);
+  color: #fff;
 }
 
 .offers .card:nth-child(2) {
   margin: 11rem 0;
+}
+
+.offers .card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.096);
+          box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.096);
+}
+
+@media (min-width: 50em) {
+  .offers .card:nth-child(2) {
+    margin: unset;
+  }
 }
 /*# sourceMappingURL=main.css.map */
