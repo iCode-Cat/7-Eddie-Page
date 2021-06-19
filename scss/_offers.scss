@@ -1,13 +1,14 @@
 .offers {
-   
+    @extend .aside-padding;
     margin-top: 10.2rem;
-    
+ 
     .offers-header {
-        @extend .margin-left;
+        @extend .margin-left-aside;
         h1 {
             font-weight: 500;
             font-size: var(--offer_header_text1);
             color: var(--clr-gray1);
+       
         }
         
     }
@@ -26,7 +27,7 @@
        align-items: flex-start;
        justify-content: center;
         padding: 4.9rem 3rem;
-        max-width: 341px;
+        width: 100%;
         transition: 0.3s;
         border-radius: 24px;
         // Icons
@@ -37,12 +38,15 @@
 
         // Card Strong Text
         h1 {
+            font-size: 2.4rem;
             margin: 3.5rem 0;
             color:var(--clr-gray1)
         }
         //Card Text
         p {
+       
             max-width: 273px;
+            line-height: 24px;
             color:var(--clr-gray2)
         }
 
@@ -53,6 +57,8 @@
             padding: 0.9rem 1.3rem;
             border-radius: 12px;
             transition: 0.3s;
+            width: 116px;
+            height: 42px;
         }
 
         .btn-secondary-hover:hover {
@@ -71,8 +77,14 @@
     }
 
     @media (min-width:50em) {
+        margin-top: 17rem;
+        .card {
+            max-width: 341px;
+        }
         .card:nth-child(2) {
             margin: unset;
+            align-items: flex-start;
+            text-align: unset;
         }
         
     }

@@ -40,6 +40,10 @@ body {
     }
     &-light {
         color: var(--clr-white2);
+        font-family: Heebo;
+        font-size: 3.6rem;
+        line-height: 36px;
+        
     }
 }
 
@@ -95,8 +99,13 @@ body {
     }
 }
 
+// Aside padding
+.aside-padding {
+    padding: unset;
+}
+
 // Left Margin Class
-.margin-left {
+.margin-left-hero, .margin-left-aside {
     margin-left: 3rem;
 }
 
@@ -139,8 +148,16 @@ body {
 }
 
 // Left Margin Class
-.margin-left {
-    margin-left: 12rem;
+.margin-left-hero {
+    margin-left: 20rem;
+}
+.margin-left-aside {
+    margin-left: 0rem;
+}
+
+// Aside padding
+.aside-padding {
+    padding: 0 11.5rem;
 }
 
 }

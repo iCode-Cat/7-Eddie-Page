@@ -1,0 +1,97 @@
+.gallery {
+    @extend .aside-padding;
+    margin-top: 10rem;
+    &-button-container {
+        margin-top: 3rem;
+        justify-content: flex-start;
+        width: 100%;
+        button {
+            background: none;
+            color:var(--clr-blue);
+            font-size:1.8rem;
+            span {
+                margin-left: 1.2rem;
+            }
+        }
+        
+    }
+    &-header {
+        @extend .margin-left-aside;
+        margin-bottom: 4.9rem;
+        h1 {
+            font-weight: 500;
+            line-height: 36px;
+            font-size: 2.4rem;
+            color: var(--clr-gray1);
+        }
+    }
+
+    // Images wrapper 
+    &-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-between;
+        gap: 40px;
+        img {
+            border-radius: 12px;
+            
+            
+        }
+    }
+
+    &-images {
+        figcaption {
+            color: var(--clr-gray3);
+            font-size: 1.2rem;
+            margin-top: 1.2rem;
+            line-height: 18px;
+            font-weight: 300;
+        }
+        h1 {
+            color: var(--clr-gray1);
+            font-weight: 500;
+            line-height: 27px;
+        }
+    }
+    @media (min-width:50em) {
+        margin-top: 19rem;
+        &-header {
+            margin-bottom: 1.2rem;
+            h1 {
+                font-size: 3.6rem;
+                line-height: 54px;
+            }
+        }
+        &-wrapper {
+            grid-template-columns: auto auto;
+            gap: 0px 20px;
+        }
+        &-images {
+            figcaption {
+                font-size: 1.4rem;
+                line-height: 21px;
+            }
+            h1 {
+                font-size: 2.4rem;
+                line-height: 36px;
+            }
+        }
+        &-images:nth-child(1), &-images:nth-child(3) {
+            margin-top: 16rem;
+        }
+
+        &-button-container {
+            margin-top: 0rem;
+            justify-content: flex-end;
+            button {
+                font-size:2.4rem;
+                span {
+                    margin-left: 1.7rem;
+                }
+            }
+            
+        }
+
+    }
+}

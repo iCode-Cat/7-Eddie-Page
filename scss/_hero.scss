@@ -24,7 +24,7 @@
         }
     }
     &-header , &-footer {
-        @extend .margin-left
+        @extend .margin-left-hero
     }
 
     &-footer {
@@ -46,6 +46,7 @@
     }
 
     @media (min-width:50em) {
+        margin-top: 10rem;
         &-header {
             h1 {
                 line-height: 7.2rem;
